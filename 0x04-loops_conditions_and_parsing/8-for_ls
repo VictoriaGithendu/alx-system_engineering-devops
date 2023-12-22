@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#The content of the current directory
+
+mylist=$(ls)
+
+for x in $mylist; do
+  echo "$x" | cut -d '-' -f2
+done
